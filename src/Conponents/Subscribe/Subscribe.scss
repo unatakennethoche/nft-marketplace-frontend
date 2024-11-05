@@ -1,0 +1,97 @@
+@import "../Variables/variables.scss";
+
+.subscribe-container-style {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 130px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  font-size: 15px;
+}
+.subscribe-box-left {
+  h2 {
+    font-weight: bold;
+  }
+  p {
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .subscribe-left-box-highlight {
+    font-weight: 500;
+    margin-bottom: 20px;
+
+    span {
+      background-color: $icons-color;
+      margin-right: 10px;
+      padding: 3px 10px;
+      border-radius: 15px;
+      color: white;
+    }
+  }
+
+  .subcribe-left-input {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid $icons-color;
+    border-radius: 20px;
+    width: 250px;
+    background-color: $icons-color;
+    color: white;
+    padding: 0 5px;
+
+    input {
+      outline: none;
+      border: none;
+      background-color: transparent;
+      color: white;
+    }
+
+    .subscribe-left-icon {
+      font-size: 30px;
+      margin: auto 10px;
+    }
+  }
+}
+
+.subscribe-image {
+  box-shadow: 10px 10px 20px $main-bg-color;
+  border-radius: 20px;
+}
+
+.subscribe-image:hover {
+  background-color: $icons-color;
+}
+
+@media (max-width: 600px) {
+  .subscribe-image {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media (min-width: 475px) {
+  .bigNFTSlider-container-style {
+    max-width: 475px;
+  }
+}
+@media (min-width: 640px) {
+  .bigNFTSlider-container-style {
+    max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+  .bigNFTSlider-container-style {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+  .bigNFTSlider-container-style {
+    max-width: 1024px;
+  }
+}
+@media (min-width: 1280px) {
+  .bigNFTSlider-container-style {
+    max-width: 1280px;
+  }
+}

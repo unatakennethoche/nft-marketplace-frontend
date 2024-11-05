@@ -1,0 +1,165 @@
+@import "../Variables/variables.scss";
+.bigNFTSlider-container-style {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 130px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  font-weight: 600;
+
+  .bigNFTSlider-container-left {
+    width: 400px;
+    border: 1px solid whitesmoke;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .NFT-name {
+    font-weight: bold;
+  }
+  .bigNFTSlider-creator {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .bigNFTSlider-creator-profile {
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+
+    .creator-profile-image {
+      border-radius: 40px;
+    }
+    p {
+      font-weight: 500;
+    }
+  }
+
+  .bigNFTSlider-creator-collection {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+
+    p {
+      font-weight: 500;
+    }
+
+    .collection-icon {
+      font-weight: bold;
+      font-size: 20px;
+    }
+  }
+  .bigNFTSlider-bidding {
+    margin-top: 20px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    .bigNFTSlider-bidding-box {
+      text-align: center;
+
+      small {
+        font-weight: bold;
+      }
+      p {
+        border: 1px solid $icons-color;
+        padding: 5px;
+        width: 80%;
+        margin: 20px auto;
+        border-radius: 10px;
+        font-weight: 500;
+      }
+    }
+
+    .bigNFTSlider-bidding-box-auction {
+      margin-left: 10px;
+      .bidding-box-auction-icon {
+        margin-right: 10px;
+        font-size: 20px;
+      }
+    }
+
+    .bidding-auction-timer {
+      display: flex;
+      justify-content: space-evenly;
+      font-weight: bold;
+      font-size: 20px;
+      background-color: white;
+      border-radius: 5px;
+
+      span {
+        display: block;
+        font-size: 10px;
+      }
+    }
+
+    .bigNFTSlider-left-btn {
+      display: flex;
+      justify-content: space-around;
+      margin: 5px auto;
+
+      .btn-style {
+        font-weight: bold;
+        padding: 5px 20px;
+      }
+    }
+  }
+  .bigNFTSlider-left-sliderBtn {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px auto;
+  }
+
+  .bigNFTSlider-right-box {
+    position: relative;
+
+    img {
+      border-radius: 2rem;
+      width: 350px;
+    }
+
+    .biNFTSlider-right-like {
+      position: absolute;
+      top: 2rem;
+      left: 15rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: 1.2rem;
+      background-color: $icons-color;
+      color: white;
+      border-radius: 8px;
+      padding: 0 3px;
+    }
+  }
+}
+
+@media (min-width: 475px) {
+  .bigNFTSlider-container-style {
+    max-width: 475px;
+  }
+}
+@media (min-width: 640px) {
+  .bigNFTSlider-container-style {
+    max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+  .bigNFTSlider-container-style {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+  .bigNFTSlider-container-style {
+    max-width: 1024px;
+  }
+}
+@media (min-width: 1280px) {
+  .bigNFTSlider-container-style {
+    max-width: 1280px;
+  }
+}

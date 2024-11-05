@@ -1,0 +1,72 @@
+@import "../Variables/variables.scss";
+.filter-container-style {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+
+  .filter-box-left {
+    display: flex;
+    justify-content: space-between;
+
+    button {
+      font-weight: 600;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+      background-color: white;
+      padding: 5px 10px;
+    }
+    button:hover {
+      // background-color: $icons-color;
+      // color: $main-bg-color;
+      border: 1px solid $icons-color;
+      box-shadow: 5px 5px 5px $icons-color;
+    }
+  }
+  .filter-box-right {
+    border: 1px solid $icons-color;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px $icons-color;
+    padding: 3px;
+    max-width: 250px;
+    font-weight: 600;
+    text-align: center;
+    margin: 15px auto;
+
+    span {
+      margin: 10px 5px;
+    }
+  }
+  .filter-box-right:hover {
+    background-color: $icons-color;
+    color: $main-bg-color;
+  }
+
+  .fiter-box-items {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-weight: 600;
+
+    .filter-content-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: whitesmoke;
+      padding: 3px 10px;
+      border-radius: 15px;
+      box-shadow: 3px 3px 3px rgb(140, 138, 138);
+      cursor: pointer;
+    }
+    .filter-content-box:hover {
+      border: 2px solid $icons-color;
+    }
+    span {
+      margin: 0 5px;
+    }
+  }
+}

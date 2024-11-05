@@ -1,0 +1,57 @@
+@import "../Variables/variables.scss";
+
+.container-style {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .navbar-left {
+    width: 380px;
+    display: flex;
+    justify-content: space-between;
+
+    .search {
+      border: 1px solid rgb(47, 27, 27);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.25rem;
+      border-radius: 1rem;
+      max-height: 40px;
+    }
+    .search-input {
+      border: none;
+      outline: none;
+      background-color: transparent;
+    }
+  }
+
+  .collapse-content {
+    font-weight: bold;
+    width: 100%;
+    display: grid;
+    font-size: 10px;
+    grid-template-columns: 1fr 1fr 0.5fr 1fr 1fr;
+    gap: 20px;
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 640px) {
+  .container-style {
+    display: flex;
+    flex-direction: row;
+  }
+  .navbar-right {
+    display: flex;
+    justify-content: flex-start;
+    width: 60%;
+    margin: auto;
+  }
+}

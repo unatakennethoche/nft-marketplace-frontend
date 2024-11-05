@@ -1,0 +1,28 @@
+@import "../../Variables/variables.scss";
+
+.notification-container {
+  padding: 2px 5px;
+  z-index: 2222222;
+  transition: all 0.3 ease-in;
+  background-color: $main-bg-color;
+  border-radius: 8px;
+
+  small {
+    display: block;
+    font-weight: 600;
+  }
+
+  img {
+    border-radius: 3rem;
+  }
+}
+
+.notification p {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.notification-container:hover {
+  background-color: $icons-color;
+}
